@@ -23,14 +23,15 @@ function ExampleJS() {
 </script>
 </head>
 <body>
+<div id="content" style="overflow:hidden;">
+<div id="formandbutton" style="float:left;">
 <form name="myform" onSubmit="JavaScript:ExampleJS(); return false;">
 <word style="height:18mm; font-size:28pt;">Name: </word><input type="text" id="name" name="name" style="height:18mm; font-size:28pt;">
 <input type="submit" value="Submit" style="height:18mm; font-size:28pt;">
 </form>
-
-<div id="names"></div>
-<div id="emails"></div>
-<div id="dogecoin" style="position:fixed; top:0px; right:25mm">
+</div>
+<div style="float:left; margin-left:5mm">
+<div id="dogecoin" style="position:fixed;">
 <br/><word style="font-size:13pt; color:#ffae00">Poor Shibe College Student.</word><br/>
 <script>
   CoinWidgetCom.go({
@@ -46,6 +47,13 @@ function ExampleJS() {
   });
 </script>
 </div>
+</div>
+</div>
+
+
+
+<div id="names"></div>
+<div id="emails"></div>
 
 </body>
 </html>
