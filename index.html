@@ -6,10 +6,8 @@
 <script type="text/javascript">
 function ExampleJS() {
     var name = document.getElementById("name").value;
-    console.log("clicked");
     $('#names').text("");
     $.getJSON("http://m2.cip.gatech.edu/proxy/iam-dev01.iam.gatech.edu/directory/people.json?query=" + name, function(data) {
-        console.log("parsing");
         var people = data.people;//is an array
         if (people != null) {
             for (var i = 0; i < people.length; i++) {
@@ -20,34 +18,14 @@ function ExampleJS() {
             }
         }
     });
-    //start ajax request
-    /*$.ajax({
-        url: "http://m2.cip.gatech.edu/proxy/iam-dev01.iam.gatech.edu/directory/people.json?query=Eric",
-        //force to handle it as text
-        dataType: "text",
-        success: function(data) {
-            //data downloaded so we call parseJSON function 
-            //and pass downloaded data
-            var json = $.parseJSON(data);
-            console.log("parsing123");
-            //now json variable contains data in json format
-            //let's display a few items
-            $('#results').html('Plugin name: ' + json.per_page + '<br />Author: ' + json.per_page);
-        }
-    });*/
-    //alert("Your name is: " + name);
-    console.log("finishing");
 }
 </script>
 </head>
 <body>
 <form name="myform" onSubmit="JavaScript:ExampleJS(); return false;">
-Name: <input type="text" id="name" name="name">
-<input type="submit" value="Submit">
+<word style="height:18mm; font-size:28pt;">Name: </word><input type="text" id="name" name="name" style="height:18mm; font-size:28pt;">
+<input type="submit" value="Submit" style="height:18mm; font-size:28pt;">
 </form>
-<!-- <h1>My First Heading</h1> -->
-
-<!-- <p>My first paragraph.</p> -->
 
 <div id="names"></div>
 <div id="emails"></div>
