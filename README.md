@@ -1,4 +1,4 @@
-Georgia-Tech-email-lookup
+Georgia Tech Email Lookup
 =========================
 
-Fast and Easy Way to Find Email Addresses of Georgia Tech Students and Faculty
+Fast and Easy Way to Find Email Addresses of Georgia Tech Students and Faculty.
