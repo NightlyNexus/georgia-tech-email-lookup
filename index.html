@@ -3,6 +3,7 @@
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://agilob.net/widget/coin.js"></script>
 <script type="text/javascript">
 function ExampleJS() {
     var name = document.getElementById("name").value;
@@ -29,6 +30,22 @@ function ExampleJS() {
 
 <div id="names"></div>
 <div id="emails"></div>
+<div id="dogecoin" style="position:fixed; top:0px; right:25mm">
+<br/><word style="font-size:13pt; color:#ffae00">Poor Shibe College Student.</word><br/>
+<script>
+  CoinWidgetCom.go({
+    wallet_address: "DDFiAKtqKJ5oybNzVqudtQzxHAYrh79ypr"
+    , currency: "dogecoin"
+    , counter: "amount"
+    , alignment: "bl"
+    , qrcode: true
+    , auto_show: false
+    , lbl_button: "Dogecoin"
+    , lbl_address: "Please Donate.</br>My Dogecoin Address:"
+    , lbl_amount: "DOGE"
+  });
+</script>
+</div>
 
 </body>
 </html>
