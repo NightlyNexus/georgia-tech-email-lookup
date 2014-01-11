@@ -4,6 +4,20 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://agilob.net/widget/coin.js"></script>
+<!-- <script type="text/javascript">
+function Resizing() {
+    console.log("Resizing");
+    if($(window).width() <= "5in") {
+        console.log("Small");
+        var span = document.getElementById("word");
+        span.style.fontSize = "77pt";
+    } else {
+        $('#content2').show();
+    }
+}
+window.onload = Resizing;
+window.onresize = Resizing;
+</script> -->
 <script type="text/javascript">
 function ExampleJS() {
     var name = document.getElementById("name").value;
@@ -26,12 +40,12 @@ function ExampleJS() {
 <div id="content" style="overflow:hidden;">
 <div id="formandbutton" style="float:left;">
 <form name="myform" onSubmit="JavaScript:ExampleJS(); return false;">
-<word style="height:18mm; font-size:28pt;">Name: </word><input type="text" id="name" name="name" style="height:18mm; font-size:28pt;">
+<word id="word" style="height:18mm; font-size:28pt;">Name: </word><input type="text" id="name" name="name" style="height:18mm; font-size:28pt;">
 <input type="submit" value="Submit" style="height:18mm; font-size:28pt;">
 </form>
 </div>
-<div style="float:left; margin-left:5mm;">
-<div id="dogecoin" style="position:fixed; background-color:green;">
+<div style="float:left;">
+<div id="dogecoin" style="position:fixed; padding-left:5mm;">
 <script src="http://coinwidget.com/widget/coin.js"></script>
 <script>
     CoinWidgetCom.go({
@@ -47,7 +61,7 @@ function ExampleJS() {
         , lbl_amount: "BTC"
     });
 </script>
-<br/><word style="font-size:13pt; color:#ffae00">Poor Shibe College Student.</word><br/>
+<br/><word2 style="font-size:13pt; color:#ffae00">Poor Shibe College Student.</word2><br/>
 <script>
   CoinWidgetCom.go({
     wallet_address: "DDFiAKtqKJ5oybNzVqudtQzxHAYrh79ypr"
